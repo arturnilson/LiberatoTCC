@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>FotoNA</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Favicons
+            ================================================== -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+        <!-- Stylesheet
+            ================================================== -->
+        <link rel="stylesheet" type="text/css"  href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+        <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
+    </head>
+    <body>
+        <!-- Nav
+            ==========================================-->
+        <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+            <div class="container"> 
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <a class="navbar-brand" href="index.html">Foto<u>NA</u></a> </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home" class="page-scroll">Home</a></li>
+                        <li><a href="#about-section" class="page-scroll">Sobre</a></li>
+                        <li><a href="#works-section" class="page-scroll">Portfolio</a></li>
+                        <li><a href="#services-section" class="page-scroll">Serviços</a></li>
+                        <!--<li><a href="#team-section" class="page-scroll">Team</a></li>-->
+                        <li><a href="#contact-section" class="page-scroll">Contato</a></li>
+
+                        <!--           ----------- COMECA TESTE LOGIN -------------             -->                        
+
+
+                        <li><a id="modalBtn" class="button">Login</a>
+                            <div id="simpleModal" class="modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="closeBtn">&times;</span>
+                                        <h2>Login do Usuário</h2>
+                                        <hr>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <form  action="login.jsp" method="post">
+                                            <div class="form-group">
+                                                <p  class="col-sm-2 control-label"><b>Usuário:</b></p>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" 
+                                                           placeholder="Digite aqui o seu nome" type="text" name="usuario"/>
+                                                </div>
+                                            </div>    
+                                            <div class="form-group">
+                                                <p  class="col-sm-2 control-label"><b>Senha:</b></p>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" 
+                                                           placeholder="Digite aqui a sua senha" type="password" name="senha"/>
+                                                </div> 
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-2 ">
+                                                    <input class="btn btn-success" type="submit" value="Logar" />  
+                                                </div>
+                                            </div>                         
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <p>Caso <b>não</b> possua usuário e senha solicite o mesmo com o Fotógrafo Responsável.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--           ----------- TERMINA TESTE LOGIN -------------             -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse --> 
+            </div>
+            <!-- /.container-fluid --> 
+        </nav>
+
+        <!-- Header -->
+        <header class="text-center" id="home">
+            <div class="intro-text">
+                <h1>Nós somos <span class="color">Foto<u>NA</u></span></h1>
+                <p>Escolha de suas fotos para o book ficaram ainda mais práticas, e você pode fazê-las sem precisar sair de casa!</p>
+                <div class="clearfix"></div>
+                <a href="#about-section" class="btn btn-default btn-lg page-scroll"> Entre em contato!</a> </div>
+        </header>
+        <!-- About Section -->
+        <div id="about-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Sobre nós</h2>
+                    <hr>
+                </div>
+                <div class="space"></div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Quem somos</h4>
+                        <p>Somos uma equipe de fotógrafos especializada em diversos segmentos como: Formatura, Aniversários, Eventos, Infantil, Ensaios Pessoais e outros. </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>O que fazemos</h4>
+                        <p>Fazemos com que seu ensaio chegue em suas mãos em um curto espaço de tempo e com garantia de qualidade e bom preço!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Por que a FotoNA? </h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh ante facilisis bibendum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Section -->
+        <div id="works-section">
+            <div class="container"> <!-- Container -->
+                <div class="section-title">
+                    <h2>Portfolio</h2>
+                    <hr>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="categories">
+                    <ul class="cat">
+                        <li>
+                            <ol class="type">
+                                <li><a href="#" data-filter="*" class="active">Todas</a></li>
+                                <li><a href="#" data-filter=".web">Formatura</a></li>
+                                <li><a href="#" data-filter=".app">Ensaio Fotografico</a></li>
+                                <li><a href="#" data-filter=".branding">Infantil</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="row">
+                    <div class="portfolio-items">
+                        <div class="col-sm-6 col-md-3 col-lg-3 web">
+                            <div class="portfolio-item">
+                                <div class="hover-bg"> <a href="img/portfolio/01.jpg" rel="prettyPhoto">
+                                        <div class="hover-text">
+                                            <h4>Formatura</h4>
+                                            <small>Formatura Rabib</small>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <img src="img/portfolio/01.jpg" class="img-responsive" alt="Formatura"> </a> </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3 app">
+                            <div class="portfolio-item">
+                                <div class="hover-bg"> <a href="img/portfolio/02.jpg" rel="prettyPhoto">
+                                        <div class="hover-text">
+                                            <h4>Ensaio Fotográfico</h4>
+                                            <small>Ensaio Júlia</small>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <img src="img/portfolio/02.jpg" class="img-responsive" alt="Ensaio Fotográfico"> </a> </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3 web">
+                            <div class="portfolio-item">
+                                <div class="hover-bg"> <a href="img/portfolio/03.jpg" rel="prettyPhoto">
+                                        <div class="hover-text">
+                                            <h4>Formatura</h4>
+                                            <small>Formatura Turma 033462 Unisinos</small>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <img src="img/portfolio/03.jpg" class="img-responsive" alt="Formatura"> </a> </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3 web">
+                            <div class="portfolio-item">
+                                <div class="hover-bg"> <a href="img/portfolio/04.jpg" rel="prettyPhoto">
+                                        <div class="hover-text">
+                                            <h4>Formatura</h4>
+                                            <small>Formatura Isadora</small>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <img src="img/portfolio/04.jpg" class="img-responsive" alt="Formatura"> </a> </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3 app">
+                            <div class="portfolio-item">
+                                <div class="hover-bg"> <a href="img/portfolio/05.jpg" rel="prettyPhoto">
+                                        <div class="hover-text">
+                                            <h4>Ensaio Fotográfico</h4>
+                                            <small>Ensaio Jonas</small>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <img src="img/portfolio/05.jpg" class="img-responsive" alt="Ensaio Fotográfico"> </a> </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3 branding">
+                            <div class="portfolio-item">
+                                <div class="hover-bg"> <a href="img/portfolio/06.jpg" rel="prettyPhoto">
+                                        <div class="hover-text">
+                                            <h4>Infantil</h4>
+                                            <small>Ensaio Enzo</small>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <img src="img/portfolio/06.jpg" class="img-responsive" alt="Infantil"> </a> </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3 branding app">
+                            <div class="portfolio-item">
+                                <div class="hover-bg"> <a href="img/portfolio/07.jpg" rel="prettyPhoto">
+                                        <div class="hover-text">
+                                            <h4>Ensaio Fotográfico, Infantil</h4>
+                                            <small>Ensaio Carol</small>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <img src="img/portfolio/07.jpg" class="img-responsive" alt="Ensaio Fotográfico, Infantil"> </a> </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3 web">
+                            <div class="portfolio-item">
+                                <div class="hover-bg"> <a href="img/portfolio/08.jpg" rel="prettyPhoto">
+                                        <div class="hover-text">
+                                            <h4>Formatura</h4>
+                                            <small>Formatura Maria Antonia</small>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <img src="img/portfolio/08.jpg" class="img-responsive" alt="Formatura"> </a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services Section -->
+        <div id="services-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nossos Serviços</h2>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 service">
+                        <div class="service-box mt-5 mx-auto">
+                            <i class="fa fa-4x fa-camera text-primary mb-3 sr-icons"></i>
+                            <h4 class="mb-3">Time de Fotógrafos</h4>
+                            <p class="text-muted mb-0">Contamos com a participação de 4 fotógrafos profissionais</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service">
+                        <div class="service-box mt-5 mx-auto">
+                            <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
+                            <h4 class="mb-3">Entrega Rápida</h4>
+                            <p class="text-muted mb-0">Entregamos o seu ensaio pronto em tempo recorde!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service">
+                        <div class="service-box mt-5 mx-auto">
+                            <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
+                            <h4 class="mb-3">Disponibilidade de Horários</h4>
+                            <p class="text-muted mb-0">O melhor horário para você é o melhor horário pra nós! A escolha é sua</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 service">
+                        <div class="service-box mt-5 mx-auto">
+                            <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
+                            <h4 class="mb-3">BBBBBBB</h4>
+                            <p class="text-muted mb-0">Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--    <div class="space"></div>
+                    <div class="row">
+                      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-desktop"></i>
+                        <h4>Web design</h4>
+                        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+                      </div>
+                      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-gears"></i>
+                        <h4>App Development</h4>
+                        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.</p>
+                      </div>
+                      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-pie-chart"></i>
+                        <h4>Analystics</h4>
+                        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+                      </div>
+                      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-line-chart"></i>
+                        <h4>Marketing</h4>
+                        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
+                      </div>
+                    </div>
+                    <div class="space"></div>
+                    <div class="row">
+                      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-shopping-cart"></i>
+                        <h4>eCommerce</h4>
+                        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+                      </div>
+                      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-file-text-o"></i>
+                        <h4>Content Development</h4>
+                        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.</p>
+                      </div>
+                      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-rocket"></i>
+                        <h4>Branding</h4>
+                        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+                      </div>
+                      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-camera"></i>
+                        <h4>Video & Photography</h4>
+                        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
+                      </div>
+                    </div>-->
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <!--<div id="team-section">
+          <div class="container">
+            <div class="section-title">
+              <h2>Meet the Team</h2>
+              <hr>
+            </div>
+            <div id="row">
+              <div class="col-md-3 col-sm-6 team">
+                <div class="thumbnail"> <img src="img/team/01.jpg" alt="..." class="team-img">
+                  <div class="caption">
+                    <h3>John Doe</h3>
+                    <p>Founder</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 team">
+                <div class="thumbnail"> <img src="img/team/02.jpg" alt="..." class="team-img">
+                  <div class="caption">
+                    <h3>Mike Doe</h3>
+                    <p>Web Designer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 team">
+                <div class="thumbnail"> <img src="img/team/03.jpg" alt="..." class="team-img">
+                  <div class="caption">
+                    <h3>Jane Doe</h3>
+                    <p>Creative Director</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 team">
+                <div class="thumbnail"> <img src="img/team/04.jpg" alt="..." class="team-img">
+                  <div class="caption">
+                    <h3>Larry Show</h3>
+                    <p>Project Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>-->
+        <!-- Contact Section -->
+        <div id="contact-section">
+            <div class="container">
+                <div class="section-title center">
+                    <h2>Entre em Contato</h2>
+                    <hr>
+                </div>
+                <div class="col-md-4">
+                    <h4>Informações</h4>
+                    <div class="space"></div>
+                    <p><i class="fa fa-map-marker"></i>Avenida João Correa 200,<br>
+                        São Leopoldo, Rio Grande do Sul, Brasil</p>
+                    <div class="space"></div>
+                    <p><i class="fa fa-envelope-o"></i>administrador@fotona.com.br</p>
+                    <div class="space"></div>
+                    <p><i class="fa fa-phone"></i>(51) 99988 8899</p>
+                </div>
+                <div class="col-md-8">
+                    <h4>Envie uma Mensagem</h4>
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" id="name" class="form-control" placeholder="Nome" required="required">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" id="email" class="form-control" placeholder="E-mail" required="required">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Mensagem" required></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div id="success"></div>
+                        <button type="submit" class="btn btn-default">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--<div id="social-section">
+          <div class="container">
+            <div class="social">
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>-->
+        <div id="footer">
+            <!--  <div class="container">
+                
+              </div>-->
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+        <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+        <!-- Include all compiled plugins (below), or include individual files as needed --> 
+        <script type="text/javascript" src="js/bootstrap.js"></script> 
+        <script type="text/javascript" src="js/SmoothScroll.js"></script> 
+        <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+        <script type="text/javascript" src="js/jquery.isotope.js"></script> 
+        <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+        <script type="text/javascript" src="js/contact_me.js"></script> 
+
+        <!-- Javascripts
+            ================================================== --> 
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
